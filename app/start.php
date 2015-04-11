@@ -14,7 +14,7 @@ use Facebook\GraphObject;
 use Facebook\FacebookRequestException;
 
 FacebookSession::setDefaultApplication($config['app_id'], $config['app_secret']);
-$helper = new FacebookRedirectLoginHelper('http://localhost/snippets_codes/php_facebook_sdk4/index.php');
+$helper = new FacebookRedirectLoginHelper('https://quiet-badlands-1419.herokuapp.com//index.php');
 
 try {
 	$session = $helper->getSessionFromRedirect();
