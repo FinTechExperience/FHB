@@ -16,7 +16,7 @@ use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
 FacebookSession::setDefaultApplication( '341311466063931','50b25d09ed5241a5dd20530bdbae1156' );
 // login helper with redirect_uri
-    $helper = new FacebookRedirectLoginHelper('http://demos.krizna.com/1353/fbconfig.php' );
+    $helper = new FacebookRedirectLoginHelper('https://quiet-badlands-1419.herokuapp.com/fbconfig.php' );
 try {
   $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
