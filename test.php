@@ -18,19 +18,11 @@ use Facebook\HttpClients\FacebookHttpable;
 // start session
 
 // init app with app id and secret
-FacebookSession::setDefaultApplication( '642963862396213','856379884d66aeeb6bb610b7b95c8550' );
+FacebookSession::setDefaultApplication( '341311466063931','50b25d09ed5241a5dd20530bdbae1156' );
 
 // login helper with redirect_uri
 
-    $helper = new FacebookRedirectLoginHelper('http://demos.krizna.com/test.php' );
-
-try {
-  $session = $helper->getSessionFromRedirect();
-} catch( FacebookRequestException $ex ) {
-  // When Facebook returns an error
-} catch( Exception $ex ) {
-  // When validation fails or other local issues
-}
+  
 
 // see if we have a session
 if ( isset( $session ) ) {
@@ -45,7 +37,7 @@ if ( isset( $session ) ) {
  	    $fbfullname = $graphObject->getProperty('name'); // To Get Facebook full name
 	    $femail = $graphObject->getProperty('email');    // To Get Facebook email ID
 	/* ---- Session Variables -----*/
-	    $_SESSION['FBID'] = $fbid;           
+	    $_SESSION['FBID'] = $fbid;
 	    $_SESSION['USERNAME'] = $fbuname;
         $_SESSION['FULLNAME'] = $fbfullname;
 	    $_SESSION['EMAIL'] =  $femail;

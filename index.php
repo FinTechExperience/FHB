@@ -1,11 +1,11 @@
 <?php
-session_start(); 
+session_start();
 ?>
 <!doctype html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <title>Login with Facebook</title>
-<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> 
+<link href="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
  </head>
   <body>
   <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
@@ -26,12 +26,12 @@ session_start();
 <li><?php echo $_SESSION['EMAIL']; ?></li>
 <div><a href="logout.php">Logout</a></div>
 </ul></div></div>
-    <?php else: ?>     <!-- Before login --> 
+    <?php else: ?>     <!-- Before login -->
 <div class="container">
 <h1>Login with Facebook</h1>
            Not Connected
 <div>
-      <a href="fbconfig.php">Login with Facebook</a></div>
+      <a href="test.php">Login with Facebook</a></div>
 	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
 	  </div>
       </div>
